@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <header class='header'>
+        <div class="header__name">Karan's Weather App</div>
+        <input type="search" name="search__name" placeholder="City Name">
+        <button onclick=fetchNewCityData()>Search</button>
+    </header>
+    <div class="main">
+        <div class="main__left">
+            <select name="options" id='cities'>
+                <option value="cities" selected disabled>Cities</option>
+                <option value="London">London</option>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Las Vegas">Las Vegas</option>
+            </select>
+            <button onclick=fetchCityData()>Get Weather</button>
+        </div>
+        <div class="main__right">
+            <div class="main__card">
+                <div class="city__name">City Name</div>
+                <div class="city__description">Description : </div>
+                <div class="city__temp">Temperature (C) : </div>
+                <div class="city__pres">Pressure (hPa) : </div>
+                <div class="city__data">Date : </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
